@@ -1,3 +1,299 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 880px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+
+nav {
+  margin-top: 30px;
+  width: 600px;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+
+header .logo{
+  margin: 25px 0 0 90px;
+}
+
+@media(max-width: 800px){
+  .container{
+    width: 100%;
+  }
+  header{
+    flex-wrap: wrap;
+  }
+  nav{
+    width: 768px;
+    padding: 0 30px;
+  }
+  header .logo {
+    order: -1;
+    display: block;
+    margin: 30px 0;
+  }
+
+  @media(max-width: 500px) {
+      nav {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      nav a {        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        border-bottom: 1px solid slategrey;
+        margin: 0;
+      }
+      .round-picture {
+        display: none;
+      }
+  }
+
+header .left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.button {
+  width: 50%;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+}
+
+.divider {
+  border-top: 2px solid black;
+}
+
+.middle {
+  margin: 40px 0;
+}
+
+.middle-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-container {
+  width: 40%;
+}
+
+.middle-img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.middle-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-bottom: 20px;
+}
+
+.bottom-container {
+  width: 30%;
+}
+
+.contact {
+  margin: 30px 0;
+}
+
+.main-content .middle-img {
+  width: 100%;
+}
+
+.main-content {
+  margin: 75px 20px 35px;
+}
+
+.text-content {
+   margin: 0 10px;
+}
+
+.contact {
+   margin: 0 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media(max-width: 800px){
+
+}
 
 
