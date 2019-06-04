@@ -109,8 +109,7 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 blockquote,
@@ -128,7 +127,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 
 * {
   box-sizing: border-box;
@@ -150,17 +148,19 @@ h5 {
   margin-bottom: 15px;
 }
 
+.container {
+  width: 880px;
+  margin: auto;
+}
 
-
-body {
-  width: 1000px;
-  margin: 0 auto;
+header {
+  width: 100%;
+  display: flex;
 }
 
 nav {
-  margin-top: 20px;
-  display: flex;
-  width: 100%;
+  margin-top: 30px;
+  width: 600px;
   height: 60px;
   align-items: center;
   justify-content: space-around;
@@ -171,12 +171,44 @@ nav a {
   color: grey;
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
-  margin: 40px auto;
-  align-items: center;
+header .logo{
+  margin: 25px 0 0 90px;
 }
+
+@media(max-width: 800px){
+  .container{
+    width: 100%;
+  }
+  header{
+    flex-wrap: wrap;
+  }
+  nav{
+    width: 768px;
+    padding: 0 30px;
+  }
+  header .logo {
+    order: -1;
+    display: block;
+    margin: 30px 0;
+  }
+
+  @media(max-width: 500px) {
+      nav {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      nav a {        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        border-bottom: 1px solid slategrey;
+        margin: 0;
+      }
+      .round-picture {
+        display: none;
+      }
+  }
 
 header .left-container {
   display: flex;
@@ -240,31 +272,28 @@ header h1 {
   margin: 30px 0;
 }
 
+.main-content .middle-img {
+  width: 100%;
+}
+
+.main-content {
+  margin: 75px 20px 35px;
+}
+
+.text-content {
+   margin: 0 10px;
+}
+
+.contact {
+   margin: 0 30px;
+}
+
 footer {
   text-align: center;
 }
 
-@media(max-width: 500px){
-    .round-picture{
-        display: none;
-    }
+@media(max-width: 800px){
+
 }
 
 
-@media(max-width: 500px){
-    header {
-        display: flex;
-        flex-direction: column;
-    }
-    header nav {
-        margin: 0;
-    }
-    header nav a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 8px;
-        border-bottom: 1px solid slategrey;
-        margin: 0;
-    }
-}
